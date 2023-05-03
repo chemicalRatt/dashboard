@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:2px solid black;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 5fr/ 1fr 5fr;
+    gap: 2px;
+}
+
+.sidebar {
+    grid-area: 1/1/-1/2;
+}
+
+.header {
+    grid-area: 1/2/2/-1;
+}
+
+.content {
+    grid-area: 2/2/-1/-1;
+}

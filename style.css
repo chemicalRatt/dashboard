@@ -5,6 +5,11 @@
     border:2px solid black;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -14,6 +19,28 @@
 
 .sidebar {
     grid-area: 1/1/-1/2;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar .logo-container {
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .links-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul li {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+
 }
 
 .header {
